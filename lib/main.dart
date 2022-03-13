@@ -372,18 +372,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            // const SizedBox(width: 20),
-            // Text(
-            //   "[ Select 3 characters below to create a collage of your own character ]",
-            //   style: TextStyle(
-            //     backgroundColor: Colors.white,
-            //     fontWeight: FontWeight.bold,
-            //     fontSize: 12,
-            //     fontStyle: FontStyle.italic,
-            //   ),
-            //   textAlign: TextAlign.center,
-            // ),
-            // const SizedBox(width: 20),
+            const SizedBox(width: 20),
+            Text(
+              "[ Select 3 characters below to create a collage of your own character ]",
+              style: TextStyle(
+                backgroundColor: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 12,
+                fontStyle: FontStyle.italic,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(width: 20),
             Row(
               // row contains 3 columns
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
