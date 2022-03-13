@@ -70,7 +70,6 @@ flutter:
     - assets/barney.png
     - assets/patrick.png
     - assets/marioface.png
-    - assets/combo1.png
     - assets/hn.jpg
     - assets/la.jpg
     - assets/metroid.jpg
@@ -79,6 +78,10 @@ flutter:
     - assets/tokyo.jpg
     - assets/um.jpg
     - assets/warhol.jpg
+
+    # PHOTO COMBOS BELOW
+    - assets/combo1.png
+    - assets/combo2.png
 
    
 

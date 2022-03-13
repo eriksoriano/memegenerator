@@ -39,25 +39,25 @@ class _MyHomePageState extends State<MyHomePage> {
   String afterText = "";
   String afterText2 = "";
 
-  var photoCombo1 = [
+  var photoCombos = [
     "",
     "assets/combo1.png",
-    "assets/narutohead.png",
+    "assets/combo2.png",
     "assets/pikahead.jpg"
   ];
 
-  var photoCombo2 = [
-    "",
-    "assets/britneyface.png",
-    "assets/patrick.png",
-    "assets/narutohead.png",
-  ];
-  var photoCombo3 = [
-    "",
-    "assets/patrick.png",
-    "assets/britneyface.png",
-    "assets/narutohead.png"
-  ];
+  // var photoCombo2 = [
+  //   "",
+  //   "assets/britneyface.png",
+  //   "assets/patrick.png",
+  //   "assets/narutohead.png",
+  // ];
+  // var photoCombo3 = [
+  //   "",
+  //   "assets/patrick.png",
+  //   "assets/britneyface.png",
+  //   "assets/narutohead.png"
+  // ];
 
   var dropdownvalue = '';
   var headoptions = ['', 'MINNIE', 'NARUTO', 'MARIO'];
@@ -76,59 +76,59 @@ class _MyHomePageState extends State<MyHomePage> {
       else if (dropdownvalue == headoptions[1] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[1]) {
-        afterText = "Your New Friend: Super Sonic Meanie Mouse";
-        showPic = photoCombo1[1];
+        afterText = "Super Sonic Meanie Mouse";
+        showPic = photoCombos[1];
       } //2ND combo
       else if (dropdownvalue == headoptions[2] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[1]) {
         afterText = "COMBO 2";
-        showPic = photoCombo1[2];
+        showPic = photoCombos[2];
       } //3RD combo
       else if (dropdownvalue == headoptions[3] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[1]) {
         afterText = "COMBO 3";
-        showPic = photoCombo1[3];
+        showPic = photoCombos[3];
       }
       //4TH combo
       else if (dropdownvalue == headoptions[2] &&
           dropdownvalue2 == faceoptions[2] &&
           dropdownvalue3 == bodyoptions[2]) {
         afterText = "COMBO 4";
-        showPic = photoCombo1[3];
+        showPic = photoCombos[3];
       } // 5TH combo
       else if (dropdownvalue == headoptions[1] &&
           dropdownvalue2 == faceoptions[2] &&
           dropdownvalue3 == bodyoptions[2]) {
         afterText = "COMBO 5";
-        showPic = photoCombo1[3];
+        showPic = photoCombos[3];
       } //6TH combo
       else if (dropdownvalue == headoptions[3] &&
           dropdownvalue2 == faceoptions[2] &&
           dropdownvalue3 == bodyoptions[2]) {
         afterText = "COMBO 6";
-        showPic = photoCombo1[1];
+        showPic = photoCombos[1];
       } //7TH combo
       else if (dropdownvalue == headoptions[3] &&
           dropdownvalue2 == faceoptions[3] &&
           dropdownvalue3 == bodyoptions[3]) {
         afterText = "COMBO 7";
-        showPic = photoCombo2[1];
+        showPic = photoCombos[1];
       }
       //8TH combo
       else if (dropdownvalue == headoptions[3] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[3]) {
         afterText = "COMBO 8";
-        showPic = photoCombo2[2];
+        showPic = photoCombos[2];
       }
       //9TH combo
       else if (dropdownvalue == headoptions[3] &&
           dropdownvalue2 == faceoptions[2] &&
           dropdownvalue3 == bodyoptions[3]) {
         afterText = "COMBO 9";
-        showPic = photoCombo2[2];
+        showPic = photoCombos[2];
       }
       //10TH combo
       else {
@@ -575,7 +575,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //                 " + " +
 //                 dropdownvalue3 +
 //                 ":";
-//             showPic = photoCombo1[1];
+//             showPic = photoCombos[1];
 //             // showPic2 = photoCombo2[1];
 //             // showPic3 = photoCombo3[1];
 
@@ -583,19 +583,19 @@ class _MyHomePageState extends State<MyHomePage> {
 //           case 'NARUTO':
 //             afterText =
 //                 dropdownvalue + " + " + dropdownvalue2 + " + " + dropdownvalue3;
-//             showPic = photoCombo1[2];
+//             showPic = photoCombos[2];
 
 //             break;
 //           case 'MARIO':
 //             afterText =
 //                 dropdownvalue + " + " + dropdownvalue2 + " + " + dropdownvalue3;
-//             showPic = photoCombo1[3];
+//             showPic = photoCombos[3];
 
 //             break;
 //           case 'PIKACHU':
 //             afterText =
 //                 dropdownvalue + " + " + dropdownvalue2 + " + " + dropdownvalue3;
-//             showPic = photoCombo1[4];
+//             showPic = photoCombos[4];
 //             break;
 //         }
 //       }
