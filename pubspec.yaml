@@ -61,15 +61,6 @@ flutter:
   assets:
     - assets/avatar.png
     - assets/paris.jpeg
-    - assets/gokuhead.png
-    - assets/mickeyhead.png
-    - assets/narutohead.png
-    - assets/sky.jpg
-    - assets/pikahead.jpg
-    - assets/britneyface.png
-    - assets/barney.png
-    - assets/patrick.png
-    - assets/marioface.png
     - assets/hn.jpg
     - assets/la.jpg
     - assets/metroid.jpg
@@ -82,6 +73,36 @@ flutter:
     # PHOTO COMBOS BELOW
     - assets/combo1.png
     - assets/combo2.png
+    - assets/combo3.png
+    - assets/combo4.png
+    - assets/combo5.png
+    - assets/combo6.png
+    - assets/combo7.png
+    - assets/combo8.png
+    - assets/combo9.png
+    - assets/combo10.png
+    - assets/combo11.png
+    - assets/combo12.png
+    - assets/combo13.png
+    - assets/combo14.png
+    - assets/combo15.png
+    - assets/combo16.png
+    - assets/combo17.png
+    - assets/combo18.png
+    - assets/combo19.png
+    - assets/combo20.png
+    - assets/combo21.png
+    - assets/combo22.png
+    - assets/combo23.png
+    - assets/combo24.png
+    - assets/combo25.png
+
+
+
+
+
+
+
 
    
 

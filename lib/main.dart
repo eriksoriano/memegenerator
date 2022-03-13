@@ -40,10 +40,31 @@ class _MyHomePageState extends State<MyHomePage> {
   String afterText2 = "";
 
   var photoCombos = [
-    "",
     "assets/combo1.png",
     "assets/combo2.png",
-    "assets/pikahead.jpg"
+    "assets/combo3.png",
+    "assets/combo4.png",
+    "assets/combo5.png",
+    "assets/combo6.png",
+    "assets/combo7.png",
+    "assets/combo8.png",
+    "assets/combo9.png",
+    "assets/combo10.png",
+    "assets/combo11.png",
+    "assets/combo12.png",
+    "assets/combo13.png",
+    "assets/combo14.png",
+    "assets/combo15.png",
+    "assets/combo16.png",
+    "assets/combo17.png",
+    "assets/combo18.png",
+    "assets/combo19.png",
+    "assets/combo20.png",
+    "assets/combo21.png",
+    "assets/combo22.png",
+    "assets/combo23.png",
+    "assets/combo24.png",
+    "assets/combo25.png"
   ];
 
   // var photoCombo2 = [
@@ -63,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
   var headoptions = ['', 'MINNIE', 'NARUTO', 'MARIO'];
 
   var dropdownvalue2 = '';
-  var faceoptions = ['', 'SONIC', 'PINKPANTHER', 'BAD BUNNY'];
+  var faceoptions = ['', 'SONIC', 'SPONGEBOB', 'PIKACHU'];
 
   var dropdownvalue3 = '';
   var bodyoptions = ['', 'CARTMAN', 'GOKU', 'PATRICK'];
@@ -76,62 +97,172 @@ class _MyHomePageState extends State<MyHomePage> {
       else if (dropdownvalue == headoptions[1] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[1]) {
-        afterText = "Super Sonic Meanie Mouse";
-        showPic = photoCombos[1];
+        afterText = "Super Sonic (Meanie) Mouse";
+        showPic = photoCombos[0];
       } //2ND combo
       else if (dropdownvalue == headoptions[2] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[1]) {
-        afterText = "COMBO 2";
-        showPic = photoCombos[2];
+        afterText = "Eric Cartman, The Skinny Ninja Hedgehog";
+        showPic = photoCombos[1];
       } //3RD combo
       else if (dropdownvalue == headoptions[3] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[1]) {
-        afterText = "COMBO 3";
-        showPic = photoCombos[3];
-      }
+        afterText = "Super Mario, The Fat Hedgehog Abomination";
+        showPic = photoCombos[2];
+      } // ******************************************
       //4TH combo
       else if (dropdownvalue == headoptions[2] &&
           dropdownvalue2 == faceoptions[2] &&
           dropdownvalue3 == bodyoptions[2]) {
-        afterText = "COMBO 4";
+        afterText = "Anime Hero: NaGoku Strong Pants";
         showPic = photoCombos[3];
       } // 5TH combo
       else if (dropdownvalue == headoptions[1] &&
           dropdownvalue2 == faceoptions[2] &&
           dropdownvalue3 == bodyoptions[2]) {
-        afterText = "COMBO 5";
-        showPic = photoCombos[3];
+        afterText = "SpongeMouse AnimePants";
+        showPic = photoCombos[4];
       } //6TH combo
       else if (dropdownvalue == headoptions[3] &&
           dropdownvalue2 == faceoptions[2] &&
           dropdownvalue3 == bodyoptions[2]) {
-        afterText = "COMBO 6";
-        showPic = photoCombos[1];
+        afterText = "Super Saiyan Sponge Bro";
+        showPic = photoCombos[5];
       } //7TH combo
       else if (dropdownvalue == headoptions[3] &&
           dropdownvalue2 == faceoptions[3] &&
           dropdownvalue3 == bodyoptions[3]) {
-        afterText = "COMBO 7";
-        showPic = photoCombos[1];
+        afterText = "Super Pika Patriccia to the Rescue";
+        showPic = photoCombos[6];
       }
       //8TH combo
       else if (dropdownvalue == headoptions[3] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[3]) {
-        afterText = "COMBO 8";
-        showPic = photoCombos[2];
+        afterText = "Patrick The Blue Plumber";
+        showPic = photoCombos[7];
       }
       //9TH combo
+      else if (dropdownvalue == headoptions[1] &&
+          dropdownvalue2 == faceoptions[2] &&
+          dropdownvalue3 == bodyoptions[3]) {
+        afterText = "Underwater Disney Diva";
+        showPic = photoCombos[8];
+      }
+      //10TH combo
       else if (dropdownvalue == headoptions[3] &&
           dropdownvalue2 == faceoptions[2] &&
           dropdownvalue3 == bodyoptions[3]) {
-        afterText = "COMBO 9";
-        showPic = photoCombos[2];
+        afterText = "Super Patrick Bros.";
+        showPic = photoCombos[9];
       }
-      //10TH combo
-      else {
+      //11TH combo
+      else if (dropdownvalue == headoptions[3] &&
+          dropdownvalue2 == faceoptions[2] &&
+          dropdownvalue3 == bodyoptions[1]) {
+        afterText = "Mamma Mia! It's a Jellyfish Bruh!";
+        showPic = photoCombos[10];
+      }
+      //12TH combo
+      else if (dropdownvalue == headoptions[3] &&
+          dropdownvalue2 == faceoptions[3] &&
+          dropdownvalue3 == bodyoptions[2]) {
+        afterText = "I Ate The Pokeballs, Mushrooms and Dragon Balls, So What?";
+        showPic = photoCombos[11];
+      }
+      //13TH combo
+      else if (dropdownvalue == headoptions[3] &&
+          dropdownvalue2 == faceoptions[1] &&
+          dropdownvalue3 == bodyoptions[2]) {
+        afterText = "Super Saiyan Hedgehog!!!";
+        showPic = photoCombos[12];
+      }
+      //14TH combo
+      else if (dropdownvalue == headoptions[1] &&
+          dropdownvalue2 == faceoptions[1] &&
+          dropdownvalue3 == bodyoptions[3]) {
+        afterText = "Disney Magic superstar";
+        showPic = photoCombos[13];
+      }
+      //15TH combo
+      else if (dropdownvalue == headoptions[1] &&
+          dropdownvalue2 == faceoptions[2] &&
+          dropdownvalue3 == bodyoptions[1]) {
+        afterText = "Happy Mouse From South Park";
+        showPic = photoCombos[14];
+      }
+      //16TH combo
+      else if (dropdownvalue == headoptions[1] &&
+          dropdownvalue2 == faceoptions[3] &&
+          dropdownvalue3 == bodyoptions[1]) {
+        afterText = "Pika Pika!, I am a Fat Mouse";
+        showPic = photoCombos[15];
+      }
+      //17TH combo
+      else if (dropdownvalue == headoptions[1] &&
+          dropdownvalue2 == faceoptions[3] &&
+          dropdownvalue3 == bodyoptions[3]) {
+        afterText = "Kiss Me, I am a Shocking Disney Diva, from Bikini Bottom";
+        showPic = photoCombos[16];
+      }
+      //18TH combo
+      else if (dropdownvalue == headoptions[1] &&
+          dropdownvalue2 == faceoptions[3] &&
+          dropdownvalue3 == bodyoptions[2]) {
+        afterText = "Dragon Ball Pika Mouse";
+        showPic = photoCombos[17];
+      }
+      //19TH combo
+      else if (dropdownvalue == headoptions[2] &&
+          dropdownvalue2 == faceoptions[1] &&
+          dropdownvalue3 == bodyoptions[3]) {
+        afterText = "Complete";
+        showPic = photoCombos[18];
+      }
+      //20TH combo
+      else if (dropdownvalue == headoptions[2] &&
+          dropdownvalue2 == faceoptions[3] &&
+          dropdownvalue3 == bodyoptions[3]) {
+        afterText = "PikaStar Shippuden";
+        showPic = photoCombos[19];
+      }
+      //21TH combo
+      else if (dropdownvalue == headoptions[2] &&
+          dropdownvalue2 == faceoptions[2] &&
+          dropdownvalue3 == bodyoptions[3]) {
+        afterText = "SpongeStar Shippuden, Anime Superstar!!!";
+        showPic = photoCombos[20];
+      }
+      //22TH combo
+      else if (dropdownvalue == headoptions[2] &&
+          dropdownvalue2 == faceoptions[2] &&
+          dropdownvalue3 == bodyoptions[1]) {
+        afterText = "Eric Naruto Ninja Pants";
+        showPic = photoCombos[21];
+      }
+      //23TH combo
+      else if (dropdownvalue == headoptions[2] &&
+          dropdownvalue2 == faceoptions[3] &&
+          dropdownvalue3 == bodyoptions[1]) {
+        afterText = "The South Park Electric Ninja: Pikaruto Shippuden";
+        showPic = photoCombos[22];
+      }
+      //24TH combo
+      else if (dropdownvalue == headoptions[2] &&
+          dropdownvalue2 == faceoptions[3] &&
+          dropdownvalue3 == bodyoptions[2]) {
+        afterText = "Naruchu Super Saiyan Hero";
+        showPic = photoCombos[23];
+      }
+      //25TH combo
+      else if (dropdownvalue == headoptions[3] &&
+          dropdownvalue2 == faceoptions[3] &&
+          dropdownvalue3 == bodyoptions[1]) {
+        afterText = "Super Pikabro From South Park";
+        showPic = photoCombos[24];
+      } else {
         afterText = "try again";
         showPic = "assets/avatar.png";
       }
@@ -286,7 +417,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       alignment: Alignment.center,
                       style: const TextStyle(
                         color: Colors.black,
-                        fontSize: 12,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
                       underline: Container(
@@ -391,7 +522,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Image(
-              width: 300,
+              width: 280,
               image: AssetImage(showPic),
               fit: BoxFit.fitWidth,
             ),
@@ -490,7 +621,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: _showMyDialog,
                   child: Text(
                     'SUBMIT RATING',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: Colors.white),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    shadowColor: Colors.black,
+                    primary: Colors.black,
                   ),
                 ),
               ],
@@ -512,12 +650,12 @@ class _MyHomePageState extends State<MyHomePage> {
       barrierDismissible: false, // user must tap button!
       builder: (BuildContext context) {
         return AlertDialog(
-          backgroundColor: Colors.limeAccent,
+          backgroundColor: Colors.black,
           title: const Text(
             'THANK YOU FOR PLAYING',
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontSize: 40,
               fontWeight: FontWeight.bold,
             ),
@@ -530,7 +668,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   "Your Rating: " + _subResult,
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.limeAccent,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -544,7 +682,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 'OKAY',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
