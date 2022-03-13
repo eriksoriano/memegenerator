@@ -1,6 +1,8 @@
 import 'dart:math';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
+        primarySwatch: Colors.lime,
       ),
       home: const MyHomePage(title: 'Create a friend using dropdown below'),
     );
@@ -74,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
       else if (dropdownvalue == headoptions[1] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[1]) {
-        afterText = "COMBO 1";
+        afterText = "Your New Friend: Super Sonic Meanie Mouse";
         showPic = photoCombo1[1];
       } //2ND combo
       else if (dropdownvalue == headoptions[2] &&
@@ -229,20 +231,31 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         // decoration: BoxDecoration(
         //   image: DecorationImage(
-        //     opacity: 80,
+        //     opacity: 100,
         //     image: AssetImage(
         //       _shuffleImages,
         //     ),
-        //     fit: BoxFit.contain,
+        //     fit: BoxFit.cover,
         //   ),
         // ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             const SizedBox(width: 20),
+            Text(
+              "[ Select 3 characters below to create a collage of your own character ]",
+              style: TextStyle(
+                backgroundColor: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 12,
+                fontStyle: FontStyle.italic,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            // const SizedBox(width: 20),
             Row(
               // row contains 3 columns
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Column(
                   children: [
@@ -369,11 +382,16 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 afterText,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(
+                  fontSize: 20,
+                  fontStyle: FontStyle.italic,
+                  color: Colors.white,
+                  backgroundColor: Colors.deepOrange,
+                ),
               ),
             ),
             Image(
-              width: 280,
+              width: 300,
               image: AssetImage(showPic),
               fit: BoxFit.fitWidth,
             ),
@@ -384,23 +402,46 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: _createCharacter,
                   child: Text(
                     'CREATE',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    shadowColor: Colors.black,
+                    primary: Colors.deepOrange,
                   ),
                 ),
-                const SizedBox(width: 15),
+                const SizedBox(width: 14),
                 ElevatedButton(
                   onPressed: _resetButton,
                   child: Text(
                     'RESET',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Colors.white70,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    shadowColor: Colors.black,
+                    primary: Colors.grey,
                   ),
                 ),
-                const SizedBox(width: 15),
+                const SizedBox(width: 14),
                 ElevatedButton(
                   onPressed: shufflebackground,
                   child: Text(
-                    'CHANGE SCENE',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    'NEW SCENE',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14,
+                        color: Colors.black54),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    shadowColor: Colors.black,
+                    primary: Colors.lime,
                   ),
                 ),
               ],
@@ -409,7 +450,15 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('TURN ON TO RATE US'),
+                Text(
+                  'TURN ON TO RATE US',
+                  style: TextStyle(
+                    backgroundColor: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
                 Switch(
                   value: _subOrNot, // boolean variable
                   onChanged: _updateSwitch, // function that updates setState
@@ -431,7 +480,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   _subResult,
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    color: Colors.red,
+                    backgroundColor: Colors.limeAccent,
+                    color: Colors.black,
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                   ),
