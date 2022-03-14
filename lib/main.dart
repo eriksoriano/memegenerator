@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lime,
       ),
-      home: const MyHomePage(title: 'Create a friend using dropdown below'),
+      home: const MyHomePage(title: 'My (Pop) Friend Creator'),
     );
   }
 }
@@ -64,7 +64,9 @@ class _MyHomePageState extends State<MyHomePage> {
     "assets/combo22.png",
     "assets/combo23.png",
     "assets/combo24.png",
-    "assets/combo25.png"
+    "assets/combo25.png",
+    "assets/combo26.png",
+    "assets/combo27.png"
   ];
 
   // var photoCombo2 = [
@@ -267,15 +269,15 @@ class _MyHomePageState extends State<MyHomePage> {
       else if (dropdownvalue == headoptions[1] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[2]) {
-        afterText = "Missing";
-        showPic = photoCombos[24];
+        afterText = "Blue Goku Mouse";
+        showPic = photoCombos[25];
       }
       //27TH combo
       else if (dropdownvalue == headoptions[2] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[2]) {
-        afterText = "Missing 2";
-        showPic = photoCombos[24];
+        afterText = "Dragon Ball Hero Sonuto";
+        showPic = photoCombos[26];
       } else {
         afterText = "try again";
         showPic = "assets/avatar.png";
@@ -369,10 +371,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text(widget.title),
-      //   centerTitle: true,
-      // ),
+      appBar: AppBar(
+        title: Text(widget.title),
+        centerTitle: true,
+      ),
       body: Container(
         // decoration: BoxDecoration(
         //   image: DecorationImage(
@@ -430,7 +432,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       // elevation: 20,
                       alignment: Alignment.center,
                       style: const TextStyle(
-                        color: Colors.black,
+                        color: Colors.deepOrange,
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
@@ -470,7 +472,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       // elevation: 20,
                       alignment: Alignment.center,
                       style: const TextStyle(
-                        color: Colors.black,
+                        color: Colors.deepOrange,
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
@@ -510,7 +512,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       // elevation: 20,
                       alignment: Alignment.center,
                       style: const TextStyle(
-                        color: Colors.black,
+                        color: Colors.deepOrange,
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
@@ -627,7 +629,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(
                     backgroundColor: Colors.limeAccent,
                     color: Colors.black,
-                    fontSize: 22,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -637,7 +639,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     'SUBMIT RATING',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 16,
+                        fontSize: 20,
                         color: Colors.white),
                   ),
                   style: ElevatedButton.styleFrom(
