@@ -218,7 +218,7 @@ class _MyHomePageState extends State<MyHomePage> {
       else if (dropdownvalue == headoptions[2] &&
           dropdownvalue2 == faceoptions[1] &&
           dropdownvalue3 == bodyoptions[3]) {
-        afterText = "Complete";
+        afterText = "Patrick the Sonic Ninja";
         showPic = photoCombos[18];
       }
       //20TH combo
@@ -261,6 +261,20 @@ class _MyHomePageState extends State<MyHomePage> {
           dropdownvalue2 == faceoptions[3] &&
           dropdownvalue3 == bodyoptions[1]) {
         afterText = "Super Pikabro From South Park";
+        showPic = photoCombos[24];
+      }
+      //26TH combo
+      else if (dropdownvalue == headoptions[1] &&
+          dropdownvalue2 == faceoptions[1] &&
+          dropdownvalue3 == bodyoptions[2]) {
+        afterText = "Missing";
+        showPic = photoCombos[24];
+      }
+      //27TH combo
+      else if (dropdownvalue == headoptions[2] &&
+          dropdownvalue2 == faceoptions[1] &&
+          dropdownvalue3 == bodyoptions[2]) {
+        afterText = "Missing 2";
         showPic = photoCombos[24];
       } else {
         afterText = "try again";
