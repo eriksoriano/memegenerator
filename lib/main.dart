@@ -371,10 +371,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-        centerTitle: true,
-      ),
+      // appBar: AppBar(
+      //   title: Text(widget.title),
+      //   centerTitle: true,
+      // ),
       body: Container(
         // decoration: BoxDecoration(
         //   image: DecorationImage(
@@ -388,18 +388,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            const SizedBox(width: 20),
-            Text(
-              "[ Select 3 characters below to create a collage of your own character ]",
-              style: TextStyle(
-                backgroundColor: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 12,
-                fontStyle: FontStyle.italic,
-              ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(width: 20),
+            const SizedBox(height: 10),
+            // Text(
+            //   "[ Select 3 characters below to create a collage of your own character ]",
+            //   style: TextStyle(
+            //     backgroundColor: Colors.white,
+            //     fontWeight: FontWeight.bold,
+            //     fontSize: 12,
+            //     fontStyle: FontStyle.italic,
+            //   ),
+            //   textAlign: TextAlign.center,
+            // ),
+            const SizedBox(height: 10),
             Row(
               // row contains 3 columns
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -538,7 +538,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Image(
-              width: 280,
+              width: 260,
               image: AssetImage(showPic),
               fit: BoxFit.fitWidth,
             ),
@@ -602,7 +602,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(
                     backgroundColor: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize: 14,
+                    fontSize: 16,
                     fontStyle: FontStyle.italic,
                   ),
                 ),
