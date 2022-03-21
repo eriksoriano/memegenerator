@@ -69,19 +69,6 @@ class _MyHomePageState extends State<MyHomePage> {
     "assets/combo27.png"
   ];
 
-  // var photoCombo2 = [
-  //   "",
-  //   "assets/britneyface.png",
-  //   "assets/patrick.png",
-  //   "assets/narutohead.png",
-  // ];
-  // var photoCombo3 = [
-  //   "",
-  //   "assets/patrick.png",
-  //   "assets/britneyface.png",
-  //   "assets/narutohead.png"
-  // ];
-
   var dropdownvalue = '';
   var headoptions = ['', 'MINNIE', 'NARUTO', 'MARIO'];
 
