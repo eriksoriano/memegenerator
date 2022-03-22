@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Midterm App',
       theme: ThemeData(
-        primarySwatch: Colors.lime,
+        primarySwatch: Colors.yellow,
       ),
-      home: const MyHomePage(title: 'My (Pop) Friend Creator'),
+      home: const MyHomePage(title: 'myPopFriend_Creator'),
     );
   }
 }
@@ -339,10 +339,17 @@ class _MyHomePageState extends State<MyHomePage> {
     "assets/metroid.jpg",
     "assets/tokyo.jpg",
     "assets/um.jpg",
-    "assets/warhol.jpg"
+    "assets/warhol.jpg",
+    "assets/miamibeach.jpg",
+    "assets/um2.jpg",
+    "assets/underwater.jpg",
+    "assets/zelda.webp",
+    "assets/disney.jpg",
+    "assets/mario64.jpg",
+    "assets/mariolevel.png"
   ];
 
-  var _shuffleImages = '';
+  var _shuffleImages = 'assets/underwater.jpg';
 
   void shufflebackground() {
     setState(() {
@@ -363,41 +370,65 @@ class _MyHomePageState extends State<MyHomePage> {
       //   centerTitle: true,
       // ),
       body: Container(
-        // decoration: BoxDecoration(
-        //   image: DecorationImage(
-        //     opacity: 100,
-        //     image: AssetImage(
-        //       _shuffleImages,
-        //     ),
-        //     fit: BoxFit.cover,
-        //   ),
-        // ),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            // opacity: 80,
+            image: AssetImage(
+              _shuffleImages,
+            ),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
+            Container(
+              child: Text(
+                afterText,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                  color: Colors.white,
+                  backgroundColor: Colors.black,
+                ),
+              ),
+            ),
+            Container(
+              child: Image(
+                // width: 300,
+                height: 360,
+                image: AssetImage(showPic),
+                fit: BoxFit.fitWidth,
+              ),
+            ),
+
+            // const SizedBox(height: 10),
             // Text(
-            //   "[ Select 3 characters below to create a collage of your own character ]",
+            //   "Select 3 characters below to create a collage of your own character",
             //   style: TextStyle(
-            //     backgroundColor: Colors.white,
+            //     // backgroundColor: Colors.white,
             //     fontWeight: FontWeight.bold,
-            //     fontSize: 12,
+            //     fontSize: 24,
             //     fontStyle: FontStyle.italic,
             //   ),
             //   textAlign: TextAlign.center,
             // ),
-            const SizedBox(height: 10),
+            // const SizedBox(height: 10),
             Row(
               // row contains 3 columns
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Column(
                   children: [
                     const Text(
-                      "CHARACTER 1:",
+                      "Character1:",
                       style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 12,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -412,20 +443,22 @@ class _MyHomePageState extends State<MyHomePage> {
                           dropdownvalue = newvalue!;
                         });
                       },
-                      dropdownColor: Colors.white,
+                      dropdownColor: Colors.black,
+                      borderRadius: BorderRadius.circular(20.0),
                       icon: const Icon(Icons.arrow_drop_down),
                       iconSize: 40,
-                      iconEnabledColor: Colors.black,
+                      iconEnabledColor: Colors.white,
                       // elevation: 20,
                       alignment: Alignment.center,
                       style: const TextStyle(
-                        color: Colors.deepOrange,
-                        fontSize: 14,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                       underline: Container(
                         height: 5,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                     ),
                   ], // ****end of select HEAD column****
@@ -434,10 +467,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 Column(
                   children: [
                     const Text(
-                      "CHARACTER 2:",
+                      "Character2:",
                       style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 12,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -452,20 +486,22 @@ class _MyHomePageState extends State<MyHomePage> {
                           dropdownvalue2 = newvalue!;
                         });
                       },
-                      dropdownColor: Colors.white,
+                      dropdownColor: Colors.black,
+                      borderRadius: BorderRadius.circular(20.0),
                       icon: const Icon(Icons.arrow_drop_down),
                       iconSize: 40,
-                      iconEnabledColor: Colors.black,
+                      iconEnabledColor: Colors.white,
                       // elevation: 20,
                       alignment: Alignment.center,
                       style: const TextStyle(
-                        color: Colors.deepOrange,
-                        fontSize: 14,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                       underline: Container(
                         height: 5,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                     ),
                   ], // ****end of select FACE column****
@@ -474,10 +510,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 Column(
                   children: [
                     const Text(
-                      "CHARACTER 3:",
+                      "Character3:",
                       style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 12,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -492,138 +529,69 @@ class _MyHomePageState extends State<MyHomePage> {
                           dropdownvalue3 = newvalue!;
                         });
                       },
-                      dropdownColor: Colors.white,
+                      dropdownColor: Colors.black,
+                      borderRadius: BorderRadius.circular(20.0),
                       icon: const Icon(Icons.arrow_drop_down),
                       iconSize: 20,
-                      iconEnabledColor: Colors.black,
+                      iconEnabledColor: Colors.white,
                       // elevation: 20,
                       alignment: Alignment.center,
                       style: const TextStyle(
-                        color: Colors.deepOrange,
-                        fontSize: 14,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                       underline: Container(
                         height: 5,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                     ),
                   ], // ****end of select BODY column****
                 ),
               ],
             ),
-            Container(
+            const SizedBox(height: 20),
+
+            ElevatedButton(
+              onPressed: _createCharacter,
               child: Text(
-                afterText,
-                textAlign: TextAlign.center,
+                'CREATE',
                 style: TextStyle(
-                  fontSize: 20,
-                  fontStyle: FontStyle.italic,
-                  color: Colors.white,
-                  backgroundColor: Colors.deepOrange,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 60,
                 ),
               ),
-            ),
-            Image(
-              width: 260,
-              image: AssetImage(showPic),
-              fit: BoxFit.fitWidth,
+              style: ElevatedButton.styleFrom(
+                shadowColor: Colors.yellow,
+                primary: Colors.lime,
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
-                  onPressed: _createCharacter,
-                  child: Text(
-                    'CREATE',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    shadowColor: Colors.black,
-                    primary: Colors.deepOrange,
-                  ),
-                ),
-                const SizedBox(width: 14),
-                ElevatedButton(
-                  onPressed: _resetButton,
-                  child: Text(
-                    'RESET',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                      color: Colors.white70,
-                    ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    shadowColor: Colors.black,
-                    primary: Colors.grey,
-                  ),
-                ),
-                const SizedBox(width: 14),
+                const SizedBox(height: 80),
+                // ElevatedButton(
+                //   onPressed: _resetButton,
+                //   child: Text(
+                //     'RESET',
+                //     style: TextStyle(
+                //       fontWeight: FontWeight.bold,
+                //       fontSize: 20,
+                //       color: Colors.white70,
+                //     ),
+                //   ),
+                //   style: ElevatedButton.styleFrom(
+                //     shadowColor: Colors.black,
+                //     primary: Colors.grey,
+                //   ),
+                // ),
+                // const SizedBox(width: 20),
                 ElevatedButton(
                   onPressed: shufflebackground,
                   child: Text(
                     'NEW SCENE',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 14,
-                        color: Colors.black54),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    shadowColor: Colors.black,
-                    primary: Colors.lime,
-                  ),
-                ),
-              ],
-            ),
-            // const SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'TURN ON TO RATE US',
-                  style: TextStyle(
-                    backgroundColor: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-                Switch(
-                  value: _subOrNot, // boolean variable
-                  onChanged: _updateSwitch, // function that updates setState
-                ),
-              ],
-            ),
-            Slider(
-              min: 1,
-              max: 3,
-              divisions: 2,
-              value: _subscriptionNum,
-              onChanged: _updateSlider,
-              label: 'Rating',
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Text(
-                  _subResult,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    backgroundColor: Colors.limeAccent,
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: _showMyDialog,
-                  child: Text(
-                    'SUBMIT RATING',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
@@ -634,8 +602,80 @@ class _MyHomePageState extends State<MyHomePage> {
                     primary: Colors.black,
                   ),
                 ),
+                const SizedBox(width: 20),
+                ElevatedButton(
+                  onPressed: _resetButton,
+                  child: Text(
+                    'RESET',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Colors.white,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    shadowColor: Colors.black,
+                    primary: Colors.black,
+                  ),
+                ),
               ],
-            )
+            ),
+
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: [
+            //     Text(
+            //       'TURN ON TO RATE US',
+            //       style: TextStyle(
+            //         backgroundColor: Colors.white,
+            //         fontWeight: FontWeight.bold,
+            //         fontSize: 16,
+            //         fontStyle: FontStyle.italic,
+            //       ),
+            //     ),
+            //     Switch(
+            //       value: _subOrNot, // boolean variable
+            //       onChanged: _updateSwitch, // function that updates setState
+            //     ),
+            //   ],
+            // ),
+            // Slider(
+            //   min: 1,
+            //   max: 3,
+            //   divisions: 2,
+            //   value: _subscriptionNum,
+            //   onChanged: _updateSlider,
+            //   label: 'Rating',
+            // ),
+            // Column(
+            //   mainAxisAlignment: MainAxisAlignment.start,
+            //   children: [
+            //     Text(
+            //       _subResult,
+            //       textAlign: TextAlign.center,
+            //       style: TextStyle(
+            //         backgroundColor: Colors.limeAccent,
+            //         color: Colors.black,
+            //         fontSize: 20,
+            //         fontWeight: FontWeight.bold,
+            //       ),
+            //     ),
+            //     ElevatedButton(
+            //       onPressed: _showMyDialog,
+            //       child: Text(
+            //         'SUBMIT RATING',
+            //         style: TextStyle(
+            //             fontWeight: FontWeight.bold,
+            //             fontSize: 20,
+            //             color: Colors.white),
+            //       ),
+            //       style: ElevatedButton.styleFrom(
+            //         shadowColor: Colors.black,
+            //         primary: Colors.black,
+            //       ),
+            //     ),
+            //   ],
+            // )
           ],
         ),
       ),

@@ -69,6 +69,14 @@ flutter:
     - assets/tokyo.jpg
     - assets/um.jpg
     - assets/warhol.jpg
+    - assets/miamibeach.jpg
+    - assets/um2.jpg
+    - assets/underwater.jpg
+    - assets/zelda.webp
+    - assets/disney.jpg
+    - assets/mario64.jpg
+    - assets/mariolevel.png
+    
 
     # PHOTO COMBOS BELOW
     - assets/combo1.png
