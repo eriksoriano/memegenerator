@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _createCharacter() {
     setState(() {
       if (dropdownvalue == '' || dropdownvalue2 == '' || dropdownvalue3 == '') {
-        afterText = "YOU MUST CHOOSE 3 ITEMS BEFORE PRESSING CREATE BUTTON";
+        afterText = "You MUST choose 3 items before pressing create";
       } //1ST combo
       else if (dropdownvalue == headoptions[1] &&
           dropdownvalue2 == faceoptions[1] &&
@@ -282,6 +282,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _subOrNot = false;
       _subResult = '';
       showPic = "assets/avatar.png";
+      _shuffleImages = 'assets/underwater.jpg';
     });
   }
 
@@ -346,10 +347,11 @@ class _MyHomePageState extends State<MyHomePage> {
     "assets/zelda.webp",
     "assets/disney.jpg",
     "assets/mario64.jpg",
-    "assets/mariolevel.png"
+    "assets/mariolevel.png",
+    "assets/black.jpg"
   ];
 
-  var _shuffleImages = 'assets/underwater.jpg';
+  var _shuffleImages = 'assets/black.jpg';
 
   void shufflebackground() {
     setState(() {
@@ -372,7 +374,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            // opacity: 80,
+            // opacity: 50,
             image: AssetImage(
               _shuffleImages,
             ),
@@ -388,11 +390,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 afterText,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.italic,
                   color: Colors.white,
-                  backgroundColor: Colors.black,
+                  shadows: <Shadow>[
+                    Shadow(
+                      offset: Offset(3.0, 3.0),
+                      blurRadius: 15.0,
+                      color: Color.fromARGB(255, 0, 0, 0),
+                    ),
+                    Shadow(
+                      offset: Offset(3.0, 3.0),
+                      blurRadius: 15.0,
+                      color: Color.fromARGB(255, 0, 0, 0),
+                    ),
+                  ],
+                  // backgroundColor: Colors.black,
                 ),
               ),
             ),
@@ -426,10 +440,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     const Text(
                       "Character1:",
                       style: TextStyle(
-                        backgroundColor: Colors.black,
+                        // backgroundColor: Colors.black,
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
+                        shadows: <Shadow>[
+                          Shadow(
+                            offset: Offset(3.0, 3.0),
+                            blurRadius: 15.0,
+                            color: Color.fromARGB(255, 0, 0, 0),
+                          ),
+                          Shadow(
+                            offset: Offset(3.0, 3.0),
+                            blurRadius: 15.0,
+                            color: Color.fromARGB(255, 0, 0, 0),
+                          ),
+                        ],
                       ),
                     ),
                     DropdownButton(
@@ -451,7 +477,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       // elevation: 20,
                       alignment: Alignment.center,
                       style: const TextStyle(
-                        backgroundColor: Colors.black,
+                        // backgroundColor: Colors.black,
                         color: Colors.white,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -469,10 +495,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     const Text(
                       "Character2:",
                       style: TextStyle(
-                        backgroundColor: Colors.black,
+                        // backgroundColor: Colors.black,
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
+                        shadows: <Shadow>[
+                          Shadow(
+                            offset: Offset(3.0, 3.0),
+                            blurRadius: 15.0,
+                            color: Color.fromARGB(255, 0, 0, 0),
+                          ),
+                          Shadow(
+                            offset: Offset(3.0, 3.0),
+                            blurRadius: 15.0,
+                            color: Color.fromARGB(255, 0, 0, 0),
+                          ),
+                        ],
                       ),
                     ),
                     DropdownButton(
@@ -494,7 +532,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       // elevation: 20,
                       alignment: Alignment.center,
                       style: const TextStyle(
-                        backgroundColor: Colors.black,
+                        // backgroundColor: Colors.black,
                         color: Colors.white,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -512,10 +550,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     const Text(
                       "Character3:",
                       style: TextStyle(
-                        backgroundColor: Colors.black,
+                        // backgroundColor: Colors.black,
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
+                        shadows: <Shadow>[
+                          Shadow(
+                            offset: Offset(3.0, 3.0),
+                            blurRadius: 15.0,
+                            color: Color.fromARGB(255, 0, 0, 0),
+                          ),
+                          Shadow(
+                            offset: Offset(3.0, 3.0),
+                            blurRadius: 15.0,
+                            color: Color.fromARGB(255, 0, 0, 0),
+                          ),
+                        ],
                       ),
                     ),
                     DropdownButton(
@@ -537,7 +587,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       // elevation: 20,
                       alignment: Alignment.center,
                       style: const TextStyle(
-                        backgroundColor: Colors.black,
+                        // backgroundColor: Colors.black,
                         color: Colors.white,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -558,14 +608,14 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 'CREATE',
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 60,
                 ),
               ),
               style: ElevatedButton.styleFrom(
                 shadowColor: Colors.yellow,
-                primary: Colors.lime,
+                primary: Colors.deepOrange,
               ),
             ),
             Row(
@@ -595,11 +645,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
-                        color: Colors.white),
+                        color: Colors.black),
                   ),
                   style: ElevatedButton.styleFrom(
                     shadowColor: Colors.black,
-                    primary: Colors.black,
+                    primary: Colors.lime,
                   ),
                 ),
                 const SizedBox(width: 20),
@@ -610,12 +660,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
                     shadowColor: Colors.black,
-                    primary: Colors.black,
+                    primary: Colors.white,
                   ),
                 ),
               ],
