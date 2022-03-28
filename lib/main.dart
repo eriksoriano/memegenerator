@@ -374,7 +374,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            // opacity: 50,
+            // opacity: 100,
             image: AssetImage(
               _shuffleImages,
             ),
