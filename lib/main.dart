@@ -336,19 +336,20 @@ class _MyHomePageState extends State<MyHomePage> {
 //              variable to shuffle background image
 // *******************************************************************
   var sceneShuffle = [
-    "assets/hn.jpg",
-    "assets/metroid.jpg",
-    "assets/tokyo.jpg",
     "assets/um.jpg",
-    "assets/warhol.jpg",
-    "assets/miamibeach.jpg",
     "assets/um2.jpg",
     "assets/underwater.jpg",
     "assets/zelda.webp",
-    "assets/disney.jpg",
-    "assets/mario64.jpg",
-    "assets/mariolevel.png",
-    "assets/black.jpg"
+    "assets/black.jpg",
+    "assets/tokyonight.jpeg",
+    "assets/prime.jpg",
+    "assets/nite2.jpg",
+    "assets/sector7.webp",
+    "assets/neon.jpg",
+    "assets/moon.jpg",
+    "assets/miaminite.jpg",
+    "assets/paris.jpeg",
+    "assets/la.jpg"
   ];
 
   var _shuffleImages = 'assets/black.jpg';

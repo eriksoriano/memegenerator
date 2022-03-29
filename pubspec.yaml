@@ -60,24 +60,25 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/avatar.png
-    - assets/paris.jpeg
-    - assets/hn.jpg
-    - assets/la.jpg
     - assets/metroid.jpg
     - assets/miami.jpg
     - assets/nyc.jpg
     - assets/tokyo.jpg
     - assets/um.jpg
-    - assets/warhol.jpg
-    - assets/miamibeach.jpg
-    - assets/um2.jpg
     - assets/underwater.jpg
     - assets/zelda.webp
-    - assets/disney.jpg
-    - assets/mario64.jpg
-    - assets/mariolevel.png
     - assets/black.jpg
     
+    - assets/tokyonight.jpeg
+    - assets/prime.jpg
+    - assets/nite2.jpg
+    - assets/sector7.webp
+    - assets/neon.jpg
+    - assets/moon.jpg
+    - assets/miaminite.jpg  
+    - assets/paris.jpeg
+    - assets/la.jpg
+  
 
     # PHOTO COMBOS BELOW
     - assets/combo1.png
