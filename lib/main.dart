@@ -443,7 +443,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         // backgroundColor: Colors.black,
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
@@ -498,7 +498,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         // backgroundColor: Colors.black,
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
@@ -553,7 +553,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         // backgroundColor: Colors.black,
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
