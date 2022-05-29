@@ -443,7 +443,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         // backgroundColor: Colors.black,
                         color: Colors.white,
-                        fontSize: 14,
+                        fontSize: 12,
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
@@ -480,7 +480,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: const TextStyle(
                         // backgroundColor: Colors.black,
                         color: Colors.white,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
                       underline: Container(
@@ -498,7 +498,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         // backgroundColor: Colors.black,
                         color: Colors.white,
-                        fontSize: 14,
+                        fontSize: 12,
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
@@ -535,7 +535,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: const TextStyle(
                         // backgroundColor: Colors.black,
                         color: Colors.white,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
                       underline: Container(
@@ -553,7 +553,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         // backgroundColor: Colors.black,
                         color: Colors.white,
-                        fontSize: 14,
+                        fontSize: 12,
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
@@ -590,7 +590,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: const TextStyle(
                         // backgroundColor: Colors.black,
                         color: Colors.white,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
                       underline: Container(
