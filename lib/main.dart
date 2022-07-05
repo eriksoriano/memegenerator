@@ -337,7 +337,6 @@ class _MyHomePageState extends State<MyHomePage> {
 // *******************************************************************
   var sceneShuffle = [
     "assets/um.jpg",
-    "assets/um2.jpg",
     "assets/underwater.jpg",
     "assets/zelda.webp",
     "assets/black.jpg",
