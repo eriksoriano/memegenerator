@@ -330,8 +330,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // var _allTextTogether = afterText +
 
-  // @override
-  // void initState() {}
 // *******************************************************************
 //              variable to shuffle background image
 // *******************************************************************
